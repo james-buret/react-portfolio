@@ -17,19 +17,8 @@ module.exports = {
         "opaque-black": "rgba(0,0,0,0.35)",
       },
       backgroundImage: (theme) => ({
-        "gradient-rainbow": "linear-gradient(90deg, #3571E4 0%, #353CE4 100%)",
-
         "gradient-rainblue": "linear-gradient(90deg, #3571E4 0%, #355EE4 100%)",
       }),
-      fontFamily: {
-        sans: ["Inter var", ...defaultTheme.fontFamily.sans],
-      },
-      content: {
-        brush: "url('./assets/brush.png')",
-        person1: "url('./assets/person-1.png')",
-        person2: "url('./assets/person-2.png')",
-        person3: "url('./assets/person-3.png')",
-      },
     },
     screens: {
       xs: "480px",
