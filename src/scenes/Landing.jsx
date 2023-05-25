@@ -53,13 +53,11 @@ const Landing = ({ setSelectedPage }) => {
           </p>
 
           <p className="jamesdesc text-md text-center md:text-start">
-            *Busts hard (😉) through the door with my large hard thick hard
-            large werewolf wolf cock that's large and hairy my body is muscular
-            and hairy and my balls are also hairy I smell you ovulating so we
-            have sex hard and it's good and nice and very yummy. I moan so
-            loudly in a not feminine way and howl in a southern accent. you get
-            pregnant and we raise a family in our cootage in the middle of the
-            forest*
+            As an expert Front-End Developer proficient in HTML, CSS, and
+            JavaScript, I deliver visually captivating and user-centric web
+            solutions. Explore my diverse portfolio and client testimonials
+            reflecting my commitment to innovation. Let's connect to elevate
+            your digital presence with a unique web experience.
           </p>
         </motion.div>
 
