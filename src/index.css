@@ -18,6 +18,7 @@ body,
 .letstalk-button {
   width: 140px;
   text-align: center;
+  border-radius: 0;
 }
 
 .letstalk-button {
@@ -28,11 +29,39 @@ body,
   margin-left: -1px;
 }
 
+.contact-frm-btn {
+  height: 48px;
+  background-color: #355ee4;
+  padding: 0px 18px;
+  color: #0e111a;
+  font-weight: 600;
+}
+
+.contact-frm-btn:hover {
+  color: #fff;
+  transition: 0.5s ease-in-out;
+}
+
 .jamesburet {
   font-weight: 600;
+}
+
+.socialmediaicons {
+  margin-top: 6px;
 }
 
 .jamesdesc {
   margin-top: 1.5rem;
   margin-bottom: 1.5rem;
+}
+
+.contactinput {
+  color: #efefef;
+  outline: 0;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.contactinput::placeholder {
+  color: rgba(255, 255, 255, 0.4);
 }
