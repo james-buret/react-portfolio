@@ -8,20 +8,23 @@ const Landing = ({ setSelectedPage }) => {
   return (
     <section
       id="home"
-      className="md:flex md:justify-between md:items-center gap-16 md:h-full py-10"
+      className="md:flex md:justify-between md:items-center gap-16 md:h-full py-20"
     >
-      {/* IMAGE SECTION */}
+      {/* VIDEO SECTION */}
       <div className="basis-3/5 z-10 mt-16 md:mt-32 flex justify-center md:order-2">
         {isAboveLarge ? (
           <div
             className="relative z-0 ml-20 before:absolute before:-top-6 before:-left-6
             before:w-full before:max-w-[400px] md:before:max-w-[600px] before:h-full before:border-2 before:border-blue before:z-[-1]"
           >
-            <img
+            <video
+              autoPlay
+              loop
               alt="profile"
               className="hover:filter hover:saturate-200 transition duration-500 z-10 w-full max-w-[400px] md:max-w-[600px]"
-              src="assets/profile-image.png"
-            />
+              src="assets/test.webm"
+              type="video/webm"
+            ></video>
           </div>
         ) : (
           <img
@@ -55,9 +58,7 @@ const Landing = ({ setSelectedPage }) => {
           <p className="jamesdesc text-md text-center md:text-start">
             As an expert Front-End Developer proficient in HTML, CSS, and
             JavaScript, I deliver visually captivating and user-centric web
-            solutions. Explore my diverse portfolio and client testimonials
-            reflecting my commitment to innovation. Let's connect to elevate
-            your digital presence with a unique web experience.
+            solutions. Explore my past projects or leave me a message below.
           </p>
         </motion.div>
 
