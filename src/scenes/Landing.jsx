@@ -8,21 +8,25 @@ const Landing = ({ setSelectedPage }) => {
   return (
     <section
       id="home"
-      className="md:flex md:justify-between md:items-center gap-16 md:h-full py-10"
+      className="md:flex md:justify-center gap-16 md:items-center md:h-screen"
     >
       {/* IMAGE SECTION */}
-      <div className="basis-3/5 z-10 mt-16 md:mt-32 flex justify-center md:order-2">
+      <div className="basis-3/5 z-10 flex justify-center md:order-2">
         {isAboveLarge ? (
-          <div
-            className="relative z-0 ml-20 before:absolute before:-top-20 before:-left-20 before:rounded-t-[400px]
-            before:w-full before:max-w-[400px] md:before:max-w-[600px] before:h-full before:border-2 before:border-blue before:z-[-1]"
-          >
-            <img
-              alt="profile"
-              className="hover:filter hover:saturate-200 transition duration-500 z-10 w-full max-w-[400px] md:max-w-[600px]"
-              src="assets/profile-image.png"
-            />
-          </div>
+            <div
+              className="relative z-0 ml-20 before:absolute before:-top-5 before:-left-5
+              before:w-full before:max-w-[800px] md:before:max-w-[800px] before:h-full before:border-2 before:border-blue before:z-[-1]"
+            >
+              <video
+                autoPlay
+                loop
+                className="hover:filter hover:saturate-200 transition duration-500 z-10
+                w-full max-w-[800px] before:max-w-[600px] h-full border-2 border-blue"
+              >
+                <source src="assets/test.webm" type="video/webm" />
+                Your browser does not support the video tag.
+              </video>
+            </div>
         ) : (
           <img
             alt="profile"
@@ -33,7 +37,7 @@ const Landing = ({ setSelectedPage }) => {
       </div>
 
       {/* MAIN TEXT */}
-      <div className="z-30 basis-2/5 mt-12 md:mt-32">
+      <div className="z-30 basis-2/5">
         {/* HEADINGS */}
         <motion.div
           initial="hidden"
@@ -45,22 +49,18 @@ const Landing = ({ setSelectedPage }) => {
             visible: { opacity: 1, x: 0 },
           }}
         >
-          <p className="text-6xl font-roboto z-10 text-center md:text-start">
+          <p className="jamesburet text-6xl z-10 text-center md:text-start">
             James {""}
-            <span
-              className="xs:relative xs:text-blue xs:font-semibold z-40"
-            >
+            <span className="xs:relative xs:text-blue xs:font-semibold z-40">
               Buret
             </span>
           </p>
 
-          <p className="mt-10 mb-7 text-sm text-center md:text-start">
-            *Busts hard (😉) through the door with my large hard thick hard
-            large werewolf wolf cock that's large and hairy my body is muscular
-            and hairy and my balls are also hairy I smell you ovulating so we have
-            sex hard and it's good and nice and very yummy. I moan so loudly in a 
-            not feminine way and howl in a southern accent. you get pregnant
-            and we raise a family in our cootage in the middle of the forest*
+          <p className="jamesdesc text-md text-center md:text-start">
+            As an expert Front-End Developer proficient in HTML, CSS, and
+            JavaScript, I deliver visually captivating and user-centric web
+            solutions. Let's connect to elevate your digital presence with a
+            unique web experience.
           </p>
         </motion.div>
 
@@ -77,20 +77,20 @@ const Landing = ({ setSelectedPage }) => {
           }}
         >
           <AnchorLink
-            className="bg-gradient-rainblue text-deep-blue rounded-sm py-3 px-7 font-semibold
+            className="contact-btn bg-gradient-rainblue text-deep-blue rounded-sm py-3 px-7 font-semibold
               hover:bg-blue hover:text-white transition duration-500"
             onClick={() => setSelectedPage("contact")}
             href="#contact"
           >
-            Contact Me
+            Contact
           </AnchorLink>
           <AnchorLink
-            className="rounded-r-sm bg-gradient-rainblue py-0.5 pr-0.5"
+            className="letstalk-button rounded-r-sm bg-blue py-0.5 pr-0.5"
             onClick={() => setSelectedPage("contact")}
             href="#contact"
           >
             <div className="bg-deep-blue hover:text-red transition duration-500 w-full h-full flex items-center justify-center px-10 font-sans">
-              Let's talk.
+              Resume
             </div>
           </AnchorLink>
         </motion.div>
