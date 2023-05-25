@@ -2,11 +2,33 @@
 @tailwind components;
 @tailwind utilities;
 
+@import url("https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600&family=Open+Sans:wght@300;400;500;600&display=swap");
+
 html,
 body,
 #root,
 .app {
   height: 100%;
-  background-color: #050916;
+  background-color: #0e111a;
   @apply text-white;
+  font-family: "Figtree", sans-serif;
+}
+
+.contact-btn,
+.letstalk-button {
+  width: 140px;
+  text-align: center;
+}
+
+.letstalk-button {
+  margin-left: -1px;
+}
+
+.jamesburet {
+  font-weight: 600;
+}
+
+.jamesdesc {
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
 }

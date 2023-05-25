@@ -45,22 +45,21 @@ const Landing = ({ setSelectedPage }) => {
             visible: { opacity: 1, x: 0 },
           }}
         >
-          <p className="text-6xl font-roboto z-10 text-center md:text-start">
+          <p className="jamesburet text-6xl z-10 text-center md:text-start">
             James {""}
-            <span
-              className="xs:relative xs:text-blue xs:font-semibold z-40"
-            >
+            <span className="xs:relative xs:text-blue xs:font-semibold z-40">
               Buret
             </span>
           </p>
 
-          <p className="mt-10 mb-7 text-sm text-center md:text-start">
+          <p className="jamesdesc text-md text-center md:text-start">
             *Busts hard (😉) through the door with my large hard thick hard
             large werewolf wolf cock that's large and hairy my body is muscular
-            and hairy and my balls are also hairy I smell you ovulating so we have
-            sex hard and it's good and nice and very yummy. I moan so loudly in a 
-            not feminine way and howl in a southern accent. you get pregnant
-            and we raise a family in our cootage in the middle of the forest*
+            and hairy and my balls are also hairy I smell you ovulating so we
+            have sex hard and it's good and nice and very yummy. I moan so
+            loudly in a not feminine way and howl in a southern accent. you get
+            pregnant and we raise a family in our cootage in the middle of the
+            forest*
           </p>
         </motion.div>
 
@@ -77,20 +76,20 @@ const Landing = ({ setSelectedPage }) => {
           }}
         >
           <AnchorLink
-            className="bg-gradient-rainblue text-deep-blue rounded-sm py-3 px-7 font-semibold
+            className="contact-btn bg-gradient-rainblue text-deep-blue rounded-sm py-3 px-7 font-semibold
               hover:bg-blue hover:text-white transition duration-500"
             onClick={() => setSelectedPage("contact")}
             href="#contact"
           >
-            Contact Me
+            Contact
           </AnchorLink>
           <AnchorLink
-            className="rounded-r-sm bg-gradient-rainblue py-0.5 pr-0.5"
+            className="letstalk-button rounded-r-sm bg-blue py-0.5 pr-0.5"
             onClick={() => setSelectedPage("contact")}
             href="#contact"
           >
             <div className="bg-deep-blue hover:text-red transition duration-500 w-full h-full flex items-center justify-center px-10 font-sans">
-              Let's talk.
+              Resume
             </div>
           </AnchorLink>
         </motion.div>

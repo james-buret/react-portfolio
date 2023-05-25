@@ -1,6 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 
-const defaultTheme = require('tailwindcss/defaultTheme')
+const defaultTheme = require("tailwindcss/defaultTheme");
 
 module.exports = {
   content: ["./src/**/*.{html,js,jsx}"],
@@ -8,23 +8,21 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        "deep-blue": "#050916",
-        blue: "#2A4BB6",
+        "deep-blue": "#0E111A",
+        blue: "#355EE4",
         red: "#355ee4",
-        yellow: "#FFA41C",
-        grey: "#828A99",
-        "dark-grey": "#757575",
+        yellow: "#355EE4",
+        grey: "#262830",
+        "dark-grey": "#32343B",
         "opaque-black": "rgba(0,0,0,0.35)",
       },
       backgroundImage: (theme) => ({
-        "gradient-rainbow":
-          "linear-gradient(81.66deg, #00B5EE 7.21%, #FF45A4 45.05%, #FFBA00 78.07%)",
+        "gradient-rainbow": "linear-gradient(90deg, #3571E4 0%, #353CE4 100%)",
 
-        "gradient-rainblue":
-          "linear-gradient(90deg, #24CBFF 14.53%, #FC59FF 69.36%, #FFBD0C 117.73%)",
+        "gradient-rainblue": "linear-gradient(90deg, #3571E4 0%, #355EE4 100%)",
       }),
       fontFamily: {
-        sans: ['Inter var', ...defaultTheme.fontFamily.sans],
+        sans: ["Inter var", ...defaultTheme.fontFamily.sans],
       },
       content: {
         brush: "url('./assets/brush.png')",
