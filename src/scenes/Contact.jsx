@@ -18,7 +18,7 @@ const Contact = () => {
   };
 
   return (
-    <section id="contact" className="contact pt-48">
+    <section id="contact" className="contact md:pt-48 my-36 pt-36">
       {/* HEADINGS */}
       <motion.div
         initial="hidden"
@@ -33,7 +33,7 @@ const Contact = () => {
       >
         <div>
           <p className="font-semibold text-5xl">
-            <span className="text-yellow">CONTACT </span>ME
+            <span className="text-blue">CONTACT </span>ME
           </p>
           <div className="flex md:justify-end my-5">
             <LineGradient width="w-1/2" />
@@ -61,7 +61,7 @@ const Contact = () => {
             <video
               autoPlay
               loop
-              className="hover:filter hover:saturate-200 transition duration-500 z-10
+              className="hover:filter hover:hue-rotate-90 hover:sepia-[.10] hover:invert transition duration-1000 z-10
                 w-full max-w-[800px] before:max-w-[800px] h-full border-2 border-blue object-cover"
             >
               <source src="assets/reactor1.mp4" type="video/mp4" />

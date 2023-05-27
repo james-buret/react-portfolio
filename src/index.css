@@ -12,6 +12,7 @@ body,
   background-color: #0e111a;
   @apply text-white;
   font-family: "Figtree", sans-serif;
+  scroll-behavior: smooth;
 }
 
 .contact-btn,
@@ -31,22 +32,4 @@ body,
 .jamesdesc {
   margin-top: 1.5rem;
   margin-bottom: 1.5rem;
-}
-
-.scroll-snap-container {
-  scroll-snap-type: y mandatory;
-  overflow: scroll;
-  height: 100vh;
-  width: 100%;
-  -webkit-overflow-scrolling: touch;
-}
-
-.scroll-snap-child {
-  scroll-snap-align: start;
-  flex: none;
-}
-
-.footer {
-  scroll-snap-align: start;
-  flex: none;
 }

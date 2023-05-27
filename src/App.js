@@ -1,20 +1,19 @@
 import Navbar from "./scenes/Navbar";
 import Landing from "./scenes/Landing";
-import DotGroup from "./scenes/DotGroup";
 import Projects from "./scenes/Projects";
 import Contact from "./scenes/Contact";
 import useMediaQuery from "./hooks/useMediaQuery";
 import { useEffect, useState, useRef } from "react";
 import { motion } from "framer-motion";
 import Footer from "./scenes/Footer";
-import useDebouncedScroll from './hooks/useDebouncedScroll';
+import useDebouncedScroll from "./hooks/useDebouncedScroll";
 
 function App() {
   // states
   const [selectedPage, setSelectedPage] = useState("home");
   const [isTopOfPage, setIsTopOfPage] = useState(true);
   const isDesktop = useMediaQuery("(min-width: 1060px)");
-  const scrollPosition = useDebouncedScroll(10000);
+  const scrollPosition = useDebouncedScroll(0);
 
   // create refs
   const homeRef = useRef(null);
@@ -42,7 +41,7 @@ function App() {
           }
         });
       },
-      { threshold: 0.5 } // adjust this if needed
+      { threshold: 0.2 } // adjust this if needed
     );
 
     // start observing
@@ -57,32 +56,46 @@ function App() {
   }, [scrollPosition]);
 
   return (
-    <div className="app bg-deep-blue scroll-snap-container">
+    <div className="app bg-deep-blue">
       <Navbar
         isTopOfPage={isTopOfPage}
         selectedPage={selectedPage}
         setSelectedPage={setSelectedPage}
       />
-      <div className="w-5/6 mx-auto md:h-full">
-        {isDesktop && (
-          <DotGroup
-            selectedPage={selectedPage}
-            setSelectedPage={setSelectedPage}
-          />
-        )}
-        <div ref={homeRef} id="home" className="scroll-snap-child">
+      <div
+        ref={homeRef}
+        id="home"
+        className="w-5/6 mx-auto md:h-full"
+      >
+        <motion.div
+          onViewportEnter={() => setSelectedPage("home")}
+        >
           <Landing setSelectedPage={setSelectedPage} />
-        </div>
+        </motion.div>
       </div>
-      <div className="w-5/6 mx-auto scroll-snap-child">
-        <div ref={projectsRef} id="projects">
+      <div
+        ref={projectsRef}
+        id="projects"
+        className="w-5/6 mx-auto"
+      >
+        <motion.div
+          margin="0 0 -200px 0"
+          onViewportEnter={() => setSelectedPage("projects")}
+        >
           <Projects />
-        </div>
+        </motion.div>
       </div>
-      <div className="w-5/6 mx-auto md:h-full scroll-snap-child">
-        <div ref={contactRef} id="contact">
+      <div
+        ref={contactRef}
+        id="contact"
+        className="w-5/6 mx-auto md:h-full"
+      >
+        <motion.div
+          amount="all"
+          onViewportEnter={() => setSelectedPage("contact")}
+        >
           <Contact />
-        </div>
+        </motion.div>
       </div>
       <Footer />
     </div>
