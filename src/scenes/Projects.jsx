@@ -61,9 +61,7 @@ const Projects = () => {
           </div>
         </div>
         <p className="mt-10 mb-10">
-          Aliquam, amet dui feugiat facilisi dui. Aliquam aliquet integer ut
-          fames odio in at. At magna ornare dictum lectus. Purus massa morbi
-          purus nec eget eleifend ut elit.
+          Below you can find all of the front-end related projects I've worked on over the years. Clicking on any preview photo will take you to the project if available.
         </p>
       </motion.div>
 
