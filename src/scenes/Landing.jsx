@@ -99,7 +99,7 @@ const Landing = ({ setSelectedPage }) => {
             className="letstalk-button rounded-r-sm bg-blue py-0.5 pr-0.5"
             href="https://docs.google.com/document/d/1ZnibWuTEBaU4897xRdyuuuoWrtsVCttxq0dlB0ARfvQ/edit?usp=sharing"
           >
-            <div className="bg-deep-blue hover:text-red transition duration-500 w-full h-full flex items-center justify-center px-10 font-sans">
+            <div className="bg-deep-blue hover:text-red transition duration-500 w-full h-full flex items-center justify-center px-10">
               Resume
             </div>
           </a>
