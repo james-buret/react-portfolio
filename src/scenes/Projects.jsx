@@ -110,7 +110,7 @@ const Projects = () => {
             }
           />
           <Project
-            title="First Blog"
+            title="Blog"
             description={
               "(HTML/CSS/JavaScript) Very early website I created as part of a free coding bootcamp."
             }
